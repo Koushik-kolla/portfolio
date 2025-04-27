@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 10px
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for layout consistency */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Navigation Bar Styling */
+.aside{
+  align-content: center;
+  nav-left: auto;    
+}
+.navigation {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.navigation ul li a:hover {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main Content Section Styling */
+.main-content {
+    padding: 40px 0;
+    padding-left: 0cm;
+    background-color: #fff;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: auto; 
+
+}
+
+/* About, Skills, Projects, Education, and Hobbies Section */
+#about p, #skills ul, #projects ul, #education p, #hobbies ul {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#skills ul, #projects ul, #hobbies ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#skills li, #projects li, #hobbies li {
+    margin-bottom: 10px;
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .navigation ul li {
+        margin: 0 10px;
+    }
+
+    .navigation ul li a {
+        font-size: 1rem;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .navigation ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navigation ul li a {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
